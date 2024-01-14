@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+
+body {
+  font-family: "Helvetica", "Arial","黑體-繁","微軟正黑體", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* 通用----------------------------- */
+
+img {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+.line{
+  background-color: #666;
+  width: 100%;
+  height: 1px;
+  margin: 5% 0;
+}
+.wda{
+  text-align: center;
+}
+.wda h1{
+  margin-bottom: 1rem;
+}
+
+#window{
+  font-size: 0.8rem;
+  margin: 32px 0 16px 0;
+  color: #999;
+}
+
+
+/* 992以上----------------------------- */
+@media (min-width:992px) {
+
+
+  p,
+  .line{
+    display: none;
+  }
+
+  .wda{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .wda h1{
+    font-size: 2.5rem;
+  }
+  .wda h3{
+    font-size: 1.8rem
+  }
+
+  .wda h6{
+    font-size: 1.2rem;
+  }
+  .wda img{
+    width: 15vw;
+  }
+
+  
+  .box {
+    position: fixed;
+    text-align: center;
+  }
+  .box h3 {
+    font-size: 1.8rem;
+    display: block;
+  }
+
+  .box img{
+    width: 200px;
+    margin: 8px;
+  }
+
+
+  .html {
+    top: 7%;
+    left: 5%;
+  }
+
+  .css {
+    top: 0;
+    left: 20%;
+  }
+
+  .js {
+    top: 40%;
+    left: 7.5%;
+  }
+
+  .jq {
+    bottom: 5%;
+    left: 20%;
+  }
+
+  .bs {
+    top: 5%;
+    right: 15%;
+  }
+
+  .sass {
+    top: 35%;
+    right: 5%;
+  }
+
+  .vue {
+    bottom: 10%;
+    right: 20%;
+  }
+
+  /* line---------------------------- */
+
+  ::before,
+  ::after {
+      content: "";
+      height: 3px;
+      background-color: lightgray;
+      position: absolute;
+  }
+
+
+  .css::after {
+    width: 7vw;
+    bottom: 15%;
+    left: 100%;
+    transform: rotate(30deg);
+  }
+
+  .html::after {
+    width: 20vw;
+    bottom: 18%;
+    left: 100%;
+    transform: rotate(15deg);
+  }
+
+  .js::after {
+    width: 17vw;
+    top: 40%;
+    left: 90%;
+    transform: rotate(-15deg);
+  }
+
+  .jq::after {
+    width: 8vw;
+    top: -10%;
+    left: 100%;
+    transform: rotate(-30deg);
+  }
+
+  .bs::before {
+    width: 14vw;
+    bottom: 20%;
+    right: 100%;
+    transform: rotate(-30deg);
+  }
+
+  .sass::before {
+    width: 21.5vw;
+    top: 50%;
+    right: 100%;
+    transform: rotate(5deg);
+  }
+
+  .vue::before {
+    width: 8vw;
+    top: -20%;
+    right: 100%;
+    transform: rotate(30deg);
+  }
+
+  #window{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  }
+
+}
